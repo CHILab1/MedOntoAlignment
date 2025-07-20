@@ -1,6 +1,3 @@
-# OntoMedPix 
-OntoMedPix: a semantic network of medical ontologies
-
 This repository is arranged as follows:
 
 ### annotation-pipeline
