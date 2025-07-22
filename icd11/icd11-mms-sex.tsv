@@ -1,0 +1,5 @@
+uid	uid_code	inclusion	indexTerm
+http://id.who.int/icd/release/11/2025-01/mms/990378205	990378205	[]	['Female']
+http://id.who.int/icd/release/11/2025-01/mms/1591498088	1591498088	[]	['Male']
+http://id.who.int/icd/release/11/2025-01/mms/175182057	175182057	[]	['Intersex']
+http://id.who.int/icd/release/11/2025-01/mms/16562053	16562053	[]	['Biological sex not specified']

@@ -1,0 +1,48 @@
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°GET LOCATION CATEGORY°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX medpix: <http://www.semanticweb.org/luigi/MergedFinalontologies/2025/2/MedPix#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ontomedpix: <http://example.org/ontoMedPix.owl#>
+PREFIX icd: <http://www.semanticweb.org/luigi/MergedFinalontologies/2025/2/icd11#>
+
+SELECT DISTINCT ?LocationCategory 
+WHERE {
+  ?LocationCategory rdfs:subClassOf ?mid1 .
+  ?mid1 rdfs:subClassOf ?mid2 .
+  ?mid2 rdfs:subClassOf icd:1154280071 .
+
+  icd:NameLocation a ?class .
+  ?class rdfs:subClassOf+ ?LocationCategory .
+  
+}
+
+Where: 
+1154280071 = Anatomy and topography
+NameLocation = choose the ICD-11 Code of a specific location
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+
+
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°GET DESEASE CATEGORY°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX medpix: <http://www.semanticweb.org/luigi/MergedFinalontologies/2025/2/MedPix#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ontomedpix: <http://example.org/ontoMedPix.owl#>
+PREFIX icd: <http://www.semanticweb.org/luigi/MergedFinalontologies/2025/2/icd11#>
+
+SELECT DISTINCT ?DeseaseCategory 
+WHERE {
+ icd:NameLDesease a ?DeseaseCategory .
+  
+}
+
+Where: NameLDesease = choose a desease individual
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°

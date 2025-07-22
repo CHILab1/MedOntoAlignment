@@ -1,7 +1,10 @@
+# MedOntoAlignment 
+An automatic alignment strategy for medical ontologies: the MedPix 2.0 case study
+
 This repository is arranged as follows:
 
 ### annotation-pipeline
-contains the code for the proposed annotation pipeline for the alignment of MedPix 2.0 and ICD-11 ontologies
+contains the code for the proposed annotation pipeline for the alignment of MedPix 2.0 to ICD-11 and RadLex ontologies
 
 ### icd11
 contains the obtained data from ICD-11 MMS via API retrieve
